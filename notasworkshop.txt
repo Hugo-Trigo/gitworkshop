@@ -1,1 +1,34 @@
-O conceito basico dos git é os commit
+git config
+
+
+O conceito basico dos git é os commit, um commmit é um checkpoint
+Não fazer commit com codigo que nao compila.
+
+Comandos:
+
+
+|Configuração do git e outras questoes basicas:
+
+    git config --global user.name "Hugo-Trigo"
+    git config --global user.email "hugogt@ua.pt"
+
+    git init - criar a pasta do git
+
+    git add file.txt - adicionar o ficheiro para ser tracked
+
+    git commit -m "Comentário útil no momento do commit" file.txt - adicionar o checkpoint (-m é a mensagem)
+
+    git commit - apenas me faz aparecer na pasta onde me encontro, os ficheiros que ainda não foram commited
+
+    git log - para me mostrar os ficheiros em que já foi feito o commit
+
+
+|Falar sobre o git push:
+Branch master - é a linha temporal das nossas versões
+Git push é mandar as nossas versões (o nosso branch master) para um outro repostirório 
+
+Código para fazer o push (isto foi criado pelo criar repositorio no github)
+    git remote add origin https://github.com/Hugo-Trigo/gitworkshop.git
+    git push -u origin master
+
+
